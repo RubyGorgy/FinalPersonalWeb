@@ -1,0 +1,564 @@
+html {
+    scroll-behavior: smooth;
+}
+* {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    margin: 0%;
+}
+/*#region page1*/
+#homePage {
+    background-color:rgb(18, 122, 159);
+    background-size: 100%;
+    width: 100vw;
+    height: 100vh;
+}
+#nevbar {
+    color: white;
+    position: fixed;
+    z-index: 999;
+    width: 100vw;
+    box-shadow: 5px 10px #3023233e;
+}
+
+#titleNevbar {
+    font-size: 2rem;
+    display: flex;
+    color: white;
+    text-align: center;
+    align-items: center;
+    
+}
+.nevbarButtons:hover{
+    text-decoration: underline;
+}
+#humburgerList {
+    width: 50%;
+    font-size: 1rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+}
+.nevbarButtons{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+#allButtons {
+    display: flex;
+    width: 80%;
+    justify-content: space-around
+}
+#itemsFirstPage {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-start;
+    width: 40%;
+    float: left;
+    margin-left: 10%;
+    margin-top: 20%;
+}
+#HireMe {
+    display: flex;
+    color: white;
+    font-size: 1.4rem;
+    width: 60%;
+    margin: 0%;
+    margin-left: 15%;
+    justify-content: space-evenly;
+}
+#h1HireMe {
+    margin: 0%;
+}
+
+#underLineHireMe {
+    display: flex;
+    color: white;
+    font-size: 0.7rem;
+    text-align: center;
+    justify-content: space-evenly;
+    float: left;
+    letter-spacing: 0.5rem;
+    margin-top: 1%;
+    margin-left: 4vw;
+}
+
+#buttonProtfolio{
+    
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    letter-spacing: .6rem;
+    background-color: rgba(34, 113, 204, 0.534);
+    transition: all .3s ease;
+    border: #6097BF 1px solid;
+    margin-top: 3%;
+    margin-left: 6vw;
+    width: 50%;
+    padding: 1%;
+    border-color: rgba(0, 255, 255, 0);
+}
+
+#buttonProtfolio:hover{
+    text-decoration-color: rgba(255, 255, 255);
+    background-color: rgba(240, 248, 255, 0);
+    border-color: white;
+}
+#iphonePicture{
+    height: 50%;
+    width: auto;
+    float: right;
+    position: absolute;
+    left: 53%;
+    top: 25%;
+}
+#manIphone {
+    height: 19%;
+    width: auto;
+    position: absolute;
+    left: 56%;
+    bottom: 36%;
+}
+/*#endregion*/
+
+
+
+
+#aboutPage {
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    background: #6190E8;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A7BFE8, #6190E8);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A7BFE8, #6190E8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+#titleAboutMe {
+margin: 0%;
+text-align: center;
+font-size: 4rem;
+background-color: #41414191;
+
+}
+#itemsSecondPage {
+display: flex;
+height: 50%;
+width: 30%;
+margin-right: 0%;
+margin-left: 12%;
+
+}
+#informationAboutMe {
+width: 90%;
+margin: 5%;
+}
+#boxAboutMe {
+    margin-top: 50%;
+}
+#buttonDownload{
+    
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    background-color: rgba(53, 62, 72, 0.534);
+    transition: all .3s ease;
+    margin-top: 3%;
+    margin-left: 7.5vw;
+    width: 50%;
+    padding: 1%;
+    border-color: rgba(0, 255, 255, 0);
+}
+#buttonDownload:hover {
+    background-color:aquamarine;
+    transition: duration 2s;
+}
+#brainPicture{
+    position: absolute;
+    width: auto;
+    height: 20%;
+    left: 72.7%;
+    top: 122%;
+}
+#teacherPicture{
+    position: absolute;
+    width: auto;
+    height: 50%;
+    left: 52%;
+    top: 122%;
+}
+/*#region cards*/
+#cards {
+    margin: 0;
+    padding: 0;
+    background: #67B26F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4ca2cd, #67B26F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4ca2cd, #67B26F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    font-family: sans-serif;
+  
+     
+}
+.card {
+    --bs-card-bg: rgba(255, 255, 255, 0) !important;
+    border: var(--bs-card-border-width) solid var(--bs-card-border-width);
+}
+.container {
+    width: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .card {
+    position: relative;
+    border-radius: 10px;
+}
+
+.container .card .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: 0.7s;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .card:nth-child(1) .icon {
+    background: #1117dc;
+}
+
+.container .card:nth-child(2) .icon {
+    background: #1117dc;
+}
+
+.container .card:nth-child(3) .icon {
+    background: #1117dc;
+}
+
+
+.container .card .icon .fa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    transition: 0.7s;
+    color: #fff;
+}
+
+i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    transition: 0.7s;
+    color: #fff;
+}
+
+.container .card .face {
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+}
+
+.container .card .face.face1 {
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.container .card:hover .face.face1{
+    background: #00aeff;
+    transform: translateY(0px);
+}
+
+.container .card .face.face1 .content {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.container .card:hover .face.face1 .content {
+    opacity: 1;
+}
+
+.container .card .face.face1 .content i{
+    max-width: 100px;
+}
+
+.container .card .face.face2 {
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+    transform: translateY(-100px);
+}
+
+.container .card:hover .face.face2{
+    transform: translateY(0);
+}
+
+.container .card .face.face2 .content p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #414141;
+}
+
+.container .card .face.face2 .content h3 {
+    margin: 0 0 10px 0;
+    padding: 0;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    color: #414141;
+} 
+
+.container a {
+    text-decoration: none;
+    color: #414141;
+}
+/*#endregion*/
+
+#servisesPage {
+    background-color:rgb(18, 122, 159);
+    background-size: 100%;
+    width: 100vw;
+    height: 100vh;
+    background: #67B26F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4ca2cd, #67B26F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4ca2cd, #67B26F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+h1#h1services {
+    text-align: center;
+    font-size: 150px;
+}
+
+#servicesText {
+    text-align: center;
+    margin-top: 5%;
+}
+#boxServices {
+    display: flex;
+    flex-direction: column;
+}
+div#titleServices{
+    margin-top: 20%;
+
+}
+#printIcon {
+    position: absolute;
+    height: 60%;
+    z-index: 2;
+}
+#computerIcon {
+    position: absolute;
+    height: 60%;
+    z-index: 2;
+}
+#buildIcon {
+    position: absolute;
+    height: 60%;
+    z-index: 2;
+}
+
+
+
+
+#hireMePage {
+    background-size: 100%;
+    width: 100vw;
+    height: 100vh;
+    background: #67B26F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4ca2cd, #67B26F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4ca2cd, #67B26F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+#BOXp4 {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+#boxFirst {
+    padding-top: 10%;
+    width: 100%;
+
+    text-align: center;
+}
+
+#boxEnd {
+    width: 100%;
+    color: white;
+    background-color: #41414195;
+
+}
+#h1boxFirst {
+    margin: 0%;
+    color: white;
+    background: padding-box ;
+    background-color: gray;
+}
+#titleBoxEnd {
+    margin: 0%;
+
+}
+#textBoxEnd {
+    margin: 0%;
+    background: padding-box ;
+
+}
+#followMe {
+    margin: 0%;
+    color: rgb(95, 18, 18)
+
+}
+#aToHireMe{
+    text-decoration: none;
+    color: rgb(189, 78, 27) !important;
+    
+}
+#aToHireMe:hover{
+color: white !important;
+background-color:rgb(131, 157, 17);
+ }
+ #aToHireMe:active{
+color:blue;
+}
+#iconsPicture {
+    max-height: 10vh
+}
+div.card {
+    border: rgba(251, 247, 247, 0);
+}
+
+@media only screen and (max-width:476px)   {
+ul.navbar-nav.me-auto.m {
+margin-left: 5%;
+}
+a#titleNevbar.navbar-brand {
+    margin-left: 5%;
+    }
+#itemsFirstPage {
+    margin: 0%;
+    width: 50%;
+}
+#iphonePicture {
+height: 40%;
+right: 17%;
+left: 43%;
+}
+#manIphone {
+height:15%;
+top: 40%;
+left: 53%;
+}
+#h1HireMe {
+    text-align: center;
+    font-size: 2.6rem;
+    margin-top: 75%;
+}
+#HireMe {
+    font-size: 1.3rem;
+    margin-top: 65%;
+}
+#buttonProtfolio {
+    font-size: 1rem;
+    width: 75%;
+    margin-left: 30%;
+
+}
+#underLineHireMe {
+    padding-top: 15%;
+    padding-bottom: 15%;
+    font-size: 1rem;
+    margin-left: 13%;
+}
+
+#boxAboutMe {
+    margin-top: 20%;
+}
+#titleAboutMe {
+    font-size: 1.4rem;
+}
+#informationAboutMe {
+    width: 100%;
+    float: left;
+    font-size: 1.1rem;
+}
+#teacherPicture {
+    height: 15%;
+    left: 46%;
+}
+#brainPicture {
+    height: 5%;
+    left: 78.5%;
+
+}
+.container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center
+
+}
+#servisesPage{
+height: 130%;
+}
+h1#h1services {
+    text-align: center;
+    font-size: 50px;
+}
+#hireMePage{
+    height: 130%;
+    }
+#buttonDownload {
+    width: 100%;
+    margin-left: 5%;
+
+}
+#buttonProtfolio {
+    margin-left: 10%;
+    font-size: 0.7rem;
+}
+.nevbarButtons {
+    font-size: 0.7rem;
+}
+#allButtons {
+    width: 50%;
+}
+#titleNevbar {
+    font-size: 1.5rem;
+}
+#h1boxFirst {
+    font-size: 1.5rem;
+}
+#titleBoxEnd {
+    font-size: 1.3rem;    
+}
+div.card {
+    border: rgba(251, 247, 247, 0);
+}
+}
